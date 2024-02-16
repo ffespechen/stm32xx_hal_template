@@ -1,0 +1,13 @@
+[placeholders.board]
+type = "string"
+prompt = "Seleccione la placa a programar"
+choices = [
+  "STM32F103 bluepill",
+]
+default = "STM32F103 bluepill"
+
+[template]
+ignore=["README.md"]
+
+[hooks]
+post = ["rename-readme.rhai"]
